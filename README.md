@@ -108,6 +108,9 @@ The analysis relies on the **Tidyverse** suite within R / Positron / RStudio:
 │   ├── 04_variation_member3.R       # availability_365, calculated_host_listings_count, number_of_reviews
 │   └── 05_covariation_analysis.R    # Cross-variable analysis, spatial plots & faceted plots
 ├── figures/                         # Exported high-resolution plots for the slides
+│   ├── gobijan/
+│   ├── member2/
+│   └── member3/
 ├── presentation/
 │   └── slides.pdf                   # Final slide deck for video recording
 ├── ai_statements/
