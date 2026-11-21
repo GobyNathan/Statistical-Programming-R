@@ -42,6 +42,7 @@ p1a_price_full <- stockholm |>
   ) +
   theme_minimal(base_size = 12)
 
+print(p1a_price_full)
 ggsave("figures/m1_01a_price_full_histogram.png", p1a_price_full, width = 8, height = 5, dpi = 300)
 
 # Plot 1B: Zooming into the typical price range (< 8,000 SEK) with finer binwidth
@@ -64,6 +65,7 @@ p1b_price_typical <- stockholm |>
   ) +
   theme_minimal(base_size = 12)
 
+print(p1b_price_typical)
 ggsave("figures/m1_01b_price_zoomed_typical.png", p1b_price_typical, width = 8, height = 5, dpi = 300)
 
 # Plot 1C: Isolating rare high-price outliers using coord_cartesian(ylim = c(0, 30))
@@ -80,6 +82,7 @@ p1c_price_outliers <- stockholm |>
   ) +
   theme_minimal(base_size = 12)
 
+print(p1c_price_outliers)
 ggsave("figures/m1_01c_price_outliers_ylim.png", p1c_price_outliers, width = 8, height = 5, dpi = 300)
 
 # Inspect top 10 most expensive listings to see what drives >15,000 SEK prices
@@ -121,6 +124,7 @@ p2_room_type <- stockholm |>
   ) +
   theme_minimal(base_size = 12)
 
+print(p2_room_type)
 ggsave("figures/m1_02_room_type_bar.png", p2_room_type, width = 8, height = 5, dpi = 300)
 
 
@@ -148,6 +152,7 @@ p3_accommodates <- stockholm |>
   ) +
   theme_minimal(base_size = 12)
 
+print(p3_accommodates)
 ggsave("figures/m1_03_accommodates_histogram.png", p3_accommodates, width = 8, height = 5, dpi = 300)
 
 
@@ -174,6 +179,7 @@ p4a_price_by_room_box <- stockholm |>
   ) +
   theme_minimal(base_size = 12)
 
+print(p4a_price_by_room_box)
 ggsave("figures/m1_04a_price_by_room_boxplot.png", p4a_price_by_room_box, width = 8, height = 5, dpi = 300)
 
 # Plot 4B: Normalized density frequency polygon (after_stat(density))
@@ -193,6 +199,7 @@ p4b_price_density_poly <- stockholm |>
   ) +
   theme_minimal(base_size = 12)
 
+print(p4b_price_density_poly)
 ggsave("figures/m1_04b_price_room_freqpoly_density.png", p4b_price_density_poly, width = 8, height = 5, dpi = 300)
 
 
@@ -217,6 +224,7 @@ p5_price_vs_accommodates <- stockholm |>
   ) +
   theme_minimal(base_size = 12)
 
+print(p5_price_vs_accommodates)
 ggsave("figures/m1_05_price_vs_accommodates_smooth.png", p5_price_vs_accommodates, width = 8, height = 5, dpi = 300)
 
 
@@ -244,6 +252,7 @@ p6_price_neighbourhood_facets <- stockholm |>
   ) +
   theme_minimal(base_size = 11)
 
+print(p6_price_neighbourhood_facets)
 ggsave("figures/m1_06_price_capacity_by_neighbourhood_facets.png", p6_price_neighbourhood_facets, width = 10, height = 6, dpi = 300)
 
 
@@ -271,4 +280,5 @@ p7_missing_price_availability <- stockholm |>
   ) +
   theme_minimal(base_size = 12)
 
+print(p7_missing_price_availability)
 ggsave("figures/m1_07_missing_price_vs_availability.png", p7_missing_price_availability, width = 8, height = 5, dpi = 300)
