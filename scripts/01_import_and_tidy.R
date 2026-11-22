@@ -24,8 +24,8 @@ stockholm <- raw_listings |>
 # Missing values check across core variables
 core_vars <- c(
   "price", "room_type", "accommodates",
-  "neighbourhood_cleansed", "minimum_nights", "bedrooms",
-  "availability_365", "calculated_host_listings_count", "number_of_reviews"
+  "neighbourhood_cleansed", "latitude", "longitude",
+  "number_of_reviews", "availability_365", "minimum_nights"
 )
 
 missing_summary <- stockholm |>

@@ -54,5 +54,8 @@ src/*.o
 src/*.so
 src/*.dll
 
+# Default Rscript plot output
+Rplots.pdf
+
 Documentation/
 Dataset/
