@@ -7,7 +7,7 @@ stockholm <- raw_listings |>
   mutate(
     price = parse_number(as.character(price)),
     room_type = fct_infreq(room_type),
-    neighbourhood_cleansed = fct_infreq(neighbourhood),
+    neighbourhood_cleansed = fct_infreq(neighbourhood_cleansed),
     host_portfolio_type = case_when(
       calculated_host_listings_count == 1 ~ "Single-Listing Host (1)",
       calculated_host_listings_count <= 4 ~ "Small Multi-Host (2–4)",
