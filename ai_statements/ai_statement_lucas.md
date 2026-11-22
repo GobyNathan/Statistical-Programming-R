@@ -35,3 +35,5 @@ The following prompts are a concise reconstruction of my main requests. Some RSt
 4. «Je trouve le p6 illisible il y a trop de points tu peux le trasnformer en graphique "Faceted Grouped Boxplot" avec de meilleurs couleurs pour qu'ils soient lisibles dans une présentation ?»
 
 5. «j'arrive pas a lancer le fichier "03_variation_lc.R". Rstudio me donne ca : ...»
+
+6. «Tu peux me donner les chiffres les plus importants genre moyenne, median etc pour les valeurs "minimum_nights", "price" et "room type".»
