@@ -27,8 +27,8 @@ Each team member is assigned **3 variables** for in-depth **Variation Analysis**
 | Member | Primary Focus Area | 3 Assigned Variables (Variation) | Lead Storytelling Variable & Narrative |
 | :--- | :--- | :--- | :--- |
 | **Gobijan** | **Pricing & Housing Typology** | `price` *(continuous, SEK)*<br>`room_type` *(categorical)*<br>`accommodates` *(discrete)* | **`price` vs Capacity & Room Types**<br>*How listing prices vary in Stockholm and what drives extreme peaks & missing values.* |
-| **Member 2** | **Geographical Analysis** | `neighbourhood_cleansed` *(categorical)*<br>`latitude` *(continuous)*<br>`longitude` *(continuous)* | **`neighbourhood_cleansed` & Spatial Distribution**<br>*Geographical distribution across Stockholm (central districts vs periphery).* |
-| **Lucas** | **Activity, Demand & Booking Rules** | `number_of_reviews` *(continuous)*<br>`availability_365` *(continuous/discrete)*<br>`minimum_nights` *(discrete/continuous)* | **`availability_365` & Booking Dynamics**<br>*Study of listing activity, guest demand, host types, and minimum stay rules.* |
+| **Lucas S.** | **Geographical Analysis** | `neighbourhood_cleansed` *(categorical)*<br>`latitude` *(continuous)*<br>`longitude` *(continuous)* | **`neighbourhood_cleansed` & Spatial Distribution**<br>*Geographical distribution across Stockholm (central districts vs periphery).* |
+| **Lucas C.** | **Activity, Demand & Booking Rules** | `number_of_reviews` *(continuous)*<br>`availability_365` *(continuous/discrete)*<br>`minimum_nights` *(discrete/continuous)* | **`availability_365` & Booking Dynamics**<br>*Study of listing activity, guest demand, host types, and minimum stay rules.* |
 
 > **Covariation Bonus Variables:** `calculated_host_listings_count` / `host_portfolio_type` (single-listing hosts vs commercial operators) and `host_is_superhost` (used as grouping/facet aesthetic).
 >
@@ -104,18 +104,18 @@ The analysis relies on the **Tidyverse** suite within R / Positron / RStudio:
 ├── scripts/
 │   ├── 01_import_and_tidy.R         # Data loading, price parsing (SEK), type casting
 │   ├── 02_variation_gobijan.R       # price, room_type, accommodates (Gobijan)
-│   ├── 03_variation_lc.R            # number_of_reviews, availability_365, minimum_nights (Lucas)
-│   └── 04_variation_member2.R       # neighbourhood_cleansed, latitude, longitude (Member 2)
+│   ├── 03_variation_lc.R            # number_of_reviews, availability_365, minimum_nights (Lucas C.)
+│   └── 04_variation_Lucas.R         # neighbourhood_cleansed, latitude, longitude (Lucas S.)
 ├── figures/                         # Exported high-resolution plots for the slides
 │   ├── gobijan/
 │   ├── lucas/
-│   └── member2/
+│   └── lucasLeVrai/
 ├── presentation/
 │   └── slides.pdf                   # Final slide deck for video recording
 ├── ai_statements/
 │   ├── ai_statement_gobijan.md      # Individual AI prompt logs & reflections (Gobijan)
-│   ├── ai_statement_lucas.md        # Individual AI prompt logs & reflections (Lucas)
-│   └── ai_statement_member2.md
+│   ├── ai_statement_lucas.md        # Individual AI prompt logs & reflections (Lucas C.)
+│   └── ai_statement_lucas_s.md      # Individual AI prompt logs & reflections (Lucas S.)
 └── README.md
 ```
 
