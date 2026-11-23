@@ -97,10 +97,7 @@ The analysis relies on the **Tidyverse** suite within R / Positron / RStudio:
 
 ```text
 ├── Dataset/
-│   └── listings.csv                 # Stockholm Airbnb dataset (4,574 rows x 90 cols)
-├── Documentation/
-│   ├── PROJECT.md                   # Project specification & EDA plan (English)
-│   └── PROJECT_FR.md                # Project specification & EDA plan (French)
+│   └── listings.csv                 # Stockholm Airbnb dataset
 ├── scripts/
 │   ├── 01_import_and_tidy.R         # Data loading, price parsing (SEK), type casting
 │   ├── 02_variation_gobijan.R       # price, room_type, accommodates (Gobijan)
